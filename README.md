@@ -2,7 +2,7 @@
 
 Use ```$./run.sh``` to run the program
 
-Use ```$./insight_testsiosse/run_tests.sh``` to run tests
+Use ```$./insight_testsuite/run_tests.sh``` to run tests
 
 Use ```$./src/unit_tests.py``` to run unit tests
 
