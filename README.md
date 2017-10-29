@@ -1,4 +1,4 @@
-# Hanming's Data Science Challenge Solution
+# Hanming's Data Engineering Challenge Solution
 
 Use ```$./run.sh``` to run the program
 
