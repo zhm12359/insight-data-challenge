@@ -2,8 +2,8 @@
 
 Use ```$./run.sh``` to run the program
 
-Use ```$./insight_testsuite/run_tests.sh``` to run tests
+Use ```$cd insight_testsuite``` and then ```$./run_tests.sh``` to run tests
 
-Use ```$./src/unit_tests.py``` to run unit tests
+Use ```$python ./src/unit_tests.py``` to run unit tests
 
 All the libraries used in this challenge came from native python 2 built in libraries. So there should not be any dependencies to install.
