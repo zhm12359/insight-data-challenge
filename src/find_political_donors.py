@@ -48,8 +48,12 @@ for cmte_id in ids:
             bisect.insort(date_map[e.transaction_date], e.transaction_amount)
         else:
             date_map[e.transaction_date] = [e.transaction_amount]
-        amounts = date_map[e.transaction_date]
-    output = cmte_id + "|" + e.transaction_date.strftime("%m%d%Y")[0:8] + "|" + str(median(amounts)) + "|" + str(len(amounts)) + "|" + str(sum(amounts)) + "\n"
-    bydate.write(output)
+        
+    dates = date_map.keys()
+    dates.sort()
+    for date in dates:
+        amounts = date_map[date]
+        output = cmte_id + "|" + date.strftime("%m%d%Y")[0:8] + "|" + str(median(amounts)) + "|" + str(len(amounts)) + "|" + str(sum(amounts)) + "\n"
+        bydate.write(output)
 
 bydate.close()

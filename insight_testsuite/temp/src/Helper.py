@@ -22,16 +22,3 @@ def median(sortedList):
         return int(round(sortedList[n//2],0))
     else:
         return int(round(sum(sortedList[n//2-1:n//2+1])/2.0,0))
-
-
-"""
-
-#Turns out using regex is pretty slow...
-pattern = re.compile("(?P<cmte_id>[a-zA-Z0-9]+)\|.*\|.*\|.*\|.*\|.*\|.*\|.*\|.*\|.*\|(?P<zip_code>.+)\|.*\|.*\|(?P<transaction_date>.*)\|(?P<TRANSACTION_AMT>.*)\|(?P<OTHER_ID>.*)\|.*\|.*\|.*\|.*\|.*")
-def process_line(line):
-    result = pattern.match(line)
-    if result:
-        return result.groupdict()
-    else:
-        return False
-"""
